@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="utf-8"></meta>
+        <title>Scrolling Web Tribodee</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <a href="#" class="logo">Tribodee</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <h2 id="text"><span>It's time to introduce myself</span><br>My name is..</h2>
+            <img src="img_scroll\protecter.jpg" id="protecter" alt="img bg not found">
+            <a href="#Text" id="btn">Read more</a>
+        </section>
+        <div class="sec">
+            <p><a id="Text"></a>What's good I am Tribodee, So if you were here you know what?<br>
+               This is my first project and to day we gonna show how was I am.<br>
+               <img src="img_scroll\myprofile.jpg" id="maself" alt="img maself not found"><br>
+               This is me, Yeah I know it's not a formal uniform but it's a normal day style.<br>
+               Honestly I lovely to hangout with ma friend but it's not means I want to go the party I hate that<br><br>
+               So... 2. 85 That my GPAX I lovely to studying in my subject but for some no reason I got alots C+ and B<br>
+               By the way I practice HTML/CSS/JAVASCRIPT And(PHP) Everyday because This is my way<br><br><br>
+
+               <a id="Contact"></a>Contact<br>
+               Tell: 094-495-4446<br>
+               E-mail: riggker@gmail.com<br>
+               GitHub:<br>
+               <img src="img_scroll\qrcodetogithub.png" id="qr" alt="img qrcode not found">
+            </p>
+        </div>
+        <script>
+            let text = document.getElementById('text')
+
+            window.addEventListener('scroll',function(){
+                let value=window.scrollY;
+                //text fade away..
+                text.style.top=50+value*-0.5+'%';
+
+                // btn.style.marginTop=value*1.5+'px';
+            })
+        </script>
+    </body>
+</html>
